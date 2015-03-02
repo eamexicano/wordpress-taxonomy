@@ -14,18 +14,25 @@ Uso
 Incluir el archivo lenguajes.php en la carpeta de plugins - wp-content/plugins -.  
 Incluir el archivo taxonomy-lenguaje.php en la carpeta del tema que estés utilizando actualmente.  
 
-Ajustes
-=======
+Plantillas
+==========
 
-En el archivo template.php modificar los comentarios para que describan tu taxonomía:  
+En el archivo taxonomy-template.php modificar los comentarios para que describan tu taxonomía:  
 
-- Plugin Name: Nombre del tipo de publicación  
-- Plugin URI: www.example.com  
-- Description: Descripción del tipo de publicación  
-- Version: Versión
-- Author:  Tu nombre  
-- Author URI: www.example.org  
-- License: Licencia de Uso
+Plugin Name: {Nombre}  
+Plugin URI: {http://www.example.com/}  
+Description: {Descripción}  
+Version: {Versión}  
+Author:  {Author}  
+Author URI: {http://www.example.com}  
+License: MIT  
 
-Cambiar los {} por el nombre que le quieras dar a tus entradas.  
-Referencia <http://blog.eamexicano.com/wordpress/entradas-personalizadas-en-wordpress/>
+Actualizar el texto que está entre llaves {} (y borrar las llaves) en la definición de etiquetas,  
+slug (dentro de las opciones) y el nombre de tu taxonomía en register_taxonomy.  
+
+Ajusta el comportamiento de tu taxonomía. 
+
+Si vas a utilizar los enlaces permanentes - permalinks - vuelve a guardar los cambios después de  
+activar el plugin de la taxonomía.
+
+Referencia <http://blog.eamexicano.com/wordpress/wordpress-taxonomias-personalizadas/>
