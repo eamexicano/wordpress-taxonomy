@@ -30,11 +30,6 @@ License: MIT
    'menu_name' => __("{Taxonomías}")
  );
 
-/*
-  Definimos las propiedades de comportamiento. 
-  Para asignar las etiquetas utilizamos el nombre del arreglo. 
-  De esta manera queda un poco más legible el código. 
-*/  
 $opciones = array(
     'labels' => $etiquetas,  
     'public' => true,
@@ -43,17 +38,14 @@ $opciones = array(
     'show_in_nav_menus' => false,
     'hierarchical' => false,
     'query_var' => 'taxonomia',    
-    'rewrite' => array( 'slug' => 'taxonomia', 'with_front' => true ),
+    'rewrite' => array( 'slug' => '{taxonomia}', 'with_front' => true ),
     'sort' => false
 );
 
 function registrar_taxonomia() {
-  	register_taxonomy('taxonomias', array( 'page', 'post' ), $opciones);
+  	register_taxonomy('{taxonomia}', array('page', 'post'), $opciones);
 }
 
-/*
-  Creamos el hook para mandar registrar la taxonomía.
-*/
 add_action('init', 'registrar_taxonomia', 0);
 
 ?>
