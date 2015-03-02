@@ -17,7 +17,7 @@ License: MIT
  $etiquetas = array(
    'name' => __( 'Lenguajes' ),
    'singular_name' => __( 'Lenguaje' ),
-   'add_new' => __( 'Nueva lenguaje' ),
+   'add_new' => __( 'Nuevo lenguaje' ),
    'all_items' => __('Todos los lenguajes'),
    'add_new_item' => __( 'Agregar lenguaje' ),    
    'edit_item' => __( 'Editar lenguaje' ),
