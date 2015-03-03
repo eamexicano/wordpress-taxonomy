@@ -1,22 +1,24 @@
-lenguajes.php
-================
+Wordpress Taxonomy
+==================
 
-Ejemplo de referencia para generar una taxonomía en wordpress. 
-La taxonomía se utiliza para clasificar páginas y entradas con lenguajes (de marcado / programación).  
-Los lenguajes se tienen que dar de alta ya sea al momento de generar el contenido o en el menú de lenguajes.  
-Se incluyen una plantilla taxonomy-lenguaje.php que se utiliza para visualizar las páginas y entradas  
-que pertenezcan a cierto lenguaje. 
+Ejemplo de referencia para generar una taxonomía en wordpress con fines didácticos y recreativos.  
+La taxonomía - lenguajes - se utiliza para clasificar páginas y entradas con lenguajes (pensando en 
+lenguajes de marcado y / o programación).  
+Los lenguajes se pueden registrar al momento de generar el contenido o en el menú de lenguajes.  
+Se incluye el archivo taxonomy-lenguaje.php  que es una plantilla que se utiliza para visualizar las páginas y entradas  
+que pertenezcan a cierto lenguaje (determinado en el URL). 
 
 
 Uso
 ===
 
 Incluir el archivo lenguajes.php en la carpeta de plugins - wp-content/plugins -.  
-Incluir el archivo taxonomy-lenguaje.php en la carpeta del tema que estés utilizando actualmente.  
+Incluir el archivo taxonomy-lenguaje.php en la carpeta del tema que estés utilizando.  
 
 Plantillas
 ==========
 
+Se incluye una plantilla para generar taxonomías - taxonomy-template.php - y la plantilla para el tema - theme-template-taxonomy.php -.  
 En el archivo taxonomy-template.php modificar los comentarios para que describan tu taxonomía:  
 
 Plugin Name: {Nombre}  
@@ -35,4 +37,21 @@ Ajusta el comportamiento de tu taxonomía.
 Si vas a utilizar los enlaces permanentes - permalinks - vuelve a guardar los cambios después de  
 activar el plugin de la taxonomía.
 
-Referencia <http://blog.eamexicano.com/wordpress/wordpress-taxonomias-personalizadas/>
+Cambia el nombre del archivo - taxonomy-template.php - por el nombre de tu taxonomia.php
+
+Si quieres utilizar la plantilla para el tema cambia el nombre del archivo theme-template-taxonomy.php por el nombre   
+taxonomy-{taxonomia}.php donde {taxonomia} es el nombre de tu taxonomía. 
+
+Si quieres visualizar las taxonomías que están asociadas a la entradas cambia el valor {taxonomia} por el nombre de tu taxonomía
+en la función get_the_term_list
+
+
+Referencia 
+==========
+
+[Taxonomías personalizadas](http://blog.eamexicano.com/wordpress/wordpress-taxonomias-personalizadas/)
+
+[@eamexicano](http://www.eamexicano.com)  
+
+Licencia MIT
+============
