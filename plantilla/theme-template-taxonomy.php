@@ -16,7 +16,7 @@
   			<?php the_excerpt('Leer Más…'); ?>
   		</section>   
       <footer class='post-footer'>
-        <?php echo get_the_term_list( $post->ID, 'taxonomia', '', ', ', '' ); ?>
+        <?php echo get_the_term_list( $post->ID, '{taxonomia}', '', ', ', '' ); ?>
       </footer>
     </article>        		
     <!-- Visualización del resumen de la entrada -->
